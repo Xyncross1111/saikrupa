@@ -18,7 +18,6 @@ export function Header() {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-base font-serif font-bold text-primary">Saikrupa Group</h1>
-              <p className="text-xs text-gray-600 font-medium">Coal & Logistics</p>
             </div>
           </Link>
 

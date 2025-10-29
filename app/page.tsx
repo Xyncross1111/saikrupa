@@ -43,13 +43,25 @@ const carouselSlides = [
     subtitle: "Biomass pellets for a greener future",
     image: "/renewable-energy-landscape.jpg",
   },
+  {
+    id: 4,
+    title: "Truenest Ventures",
+    subtitle: "Innovation-focused affiliate driving new growth",
+    image: "/industrial-innovation-technology.jpg",
+  },
+  {
+    id: 5,
+    title: "Sai Coal Movers",
+    subtitle: "Specialized bulk movement with safety and speed",
+    image: "/coal-transportation-trucks-logistics-fleet.jpg",
+  },
 ]
 
 const services = [
   {
     icon: Truck,
     title: "Coal Transportation",
-    description: "Road and rail transportation of coal with 400+ dedicated vehicles and real-time tracking",
+    description: "Road and rail transportation of coal with 400+ fleet vehicles (owned and contracted) and real-time tracking",
     image: "/coal-transportation-trucks-logistics.jpg",
   },
   {
@@ -127,7 +139,7 @@ const whyChooseUs = [
   {
     icon: Clock,
     title: "Timely Delivery",
-    description: "Dedicated fleet of 400+ vehicles ensuring on-time delivery every time",
+    description: "Dedicated fleet of 400+ vehicles (owned and contracted) ensuring on-time delivery every time",
     image: "/logistics-fleet-delivery-trucks.jpg",
   },
   {
@@ -309,8 +321,8 @@ export default function Home() {
               </p>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed">
                 Our integrated business model encompasses coal transportation, surface mining, coal crushing, biomass
-                pellet manufacturing, and fuel supply. We operate a fleet of 400+ dedicated vehicles and employ 615
-                highly qualified professionals.
+                pellet manufacturing, and fuel supply. We operate a fleet of 400+ vehicles (owned and contracted) and
+                employ 615 highly qualified professionals.
               </p>
               <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Our commitment to excellence, cost efficiency, timely delivery, and customer satisfaction has made us a
@@ -376,7 +388,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="text-4xl sm:text-5xl font-serif font-bold text-secondary mb-2">400+</div>
-                  <p className="text-sm sm:text-base text-gray-300">Dedicated Vehicles</p>
+                  <p className="text-sm sm:text-base text-gray-300">Fleet vehicles (owned and contracted)</p>
                 </div>
               </div>
             </div>

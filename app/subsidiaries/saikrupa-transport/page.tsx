@@ -15,7 +15,7 @@ export default function SaikrupaTransport() {
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Saikrupa Transport</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
-            Specialized in coal and bulk material transportation across India with a fleet of 400+ vehicles
+            Specialized in coal and bulk material transportation across India with a fleet of 400+ vehicles (owned and contracted)
           </p>
         </section>
 
@@ -30,9 +30,9 @@ export default function SaikrupaTransport() {
                 tons of coal across India.
               </p>
               <p className="text-gray-600 mb-4">
-                Our dedicated fleet of 400 vehicles (both owned and contracted) ensures timely delivery and
-                cost-efficient operations. We combine modern logistics infrastructure with experienced manpower to
-                deliver excellence in every shipment.
+                Our dedicated fleet of 400+ vehicles (owned and contracted) ensures timely delivery and cost-efficient
+                operations. We combine modern logistics infrastructure with experienced manpower to deliver excellence
+                in every shipment.
               </p>
             </div>
             <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-lg">
@@ -40,7 +40,7 @@ export default function SaikrupaTransport() {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-3">•</span>
-                  <span>400+ dedicated vehicles for coal transportation</span>
+                  <span>400+ fleet vehicles (owned and contracted) for coal transportation</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-3">•</span>

@@ -10,13 +10,13 @@ const subsidiaries = [
     href: "/subsidiaries/saikrupa-transport",
   },
   {
-    name: "Saikrupa Coal Suppliers",
+    name: "Sai Coal Suppliers",
     description: "Direct coal supply and sourcing services for industrial clients",
     focus: "Coal Supply",
     href: "/subsidiaries/saikrupa-coal-suppliers",
   },
   {
-    name: "Saikrupa Coal Movers",
+    name: "Sai Coal Movers",
     description: "Expert in coal handling and movement operations",
     focus: "Coal Handling",
     href: "/subsidiaries/saikrupa-coal-movers",
@@ -70,36 +70,43 @@ export default function Subsidiaries() {
     <>
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
-        <section className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Our Affiliate Companies</h1>
-          <p className="text-lg text-gray-600 max-w-3xl">
+      {/* Solid navy hero */}
+      <section className="w-full bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">Our Affiliate Companies</h1>
+          <p className="text-white/90 max-w-3xl">
             Saikrupa Group operates through {subsidiaries.length} specialized affiliate companies, each focused on
             delivering excellence in their respective domains.
           </p>
-        </section>
+        </div>
+      </section>
 
-  {/* Affiliates Grid */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {subsidiaries.map((subsidiary, index) => (
-            <Link key={index} href={subsidiary.href}>
-              <div className="border border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-secondary transition cursor-pointer h-full">
-                <div className="flex items-start justify-between mb-4">
-                  <h2 className="text-xl font-bold text-primary flex-1">{subsidiary.name}</h2>
-                  <span className="ml-4 px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full whitespace-nowrap">
-                    {subsidiary.focus}
-                  </span>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  {/* Affiliates Grid (navy section similar to Our Services) */}
+        <section className="p-0 bg-transparent">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            {subsidiaries.map((subsidiary, index) => (
+              <Link key={index} href={subsidiary.href}>
+                <div className="group bg-white rounded-xl border border-gray-200 hover:border-secondary hover:shadow-md transition-all duration-300 cursor-pointer h-full p-5 sm:p-6">
+                  <div className="flex items-start justify-between gap-3 mb-2 sm:mb-3">
+                    <h2 className="text-base sm:text-lg font-serif font-bold text-primary flex-1 group-hover:text-secondary transition-colors">
+                      {subsidiary.name}
+                    </h2>
+                    <span className="px-2 py-0.5 rounded-md text-[11px] font-semibold bg-secondary/10 text-secondary whitespace-nowrap">
+                      {subsidiary.focus}
+                    </span>
+                  </div>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{subsidiary.description}</p>
                 </div>
-                <p className="text-gray-600">{subsidiary.description}</p>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </section>
 
         {/* Additional Info */}
-        <section className="mt-16 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-primary mb-4">Integrated Operations</h2>
+        <section className="mt-12 sm:mt-16 p-6 sm:p-8 rounded-xl border border-gray-200 bg-gray-50">
+          <h2 className="text-2xl font-bold text-primary mb-3 sm:mb-4">Integrated Operations</h2>
           <p className="text-gray-600 mb-4">
             Our subsidiary structure allows us to provide integrated, end-to-end solutions for coal mining, handling,
             and logistics. Each subsidiary specializes in its domain while working seamlessly with others to deliver

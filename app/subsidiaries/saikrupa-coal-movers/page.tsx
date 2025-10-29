@@ -13,7 +13,7 @@ export default function SaikrupaCoalMovers() {
           <Link href="/affiliates" className="text-secondary hover:text-secondary/80 mb-4 inline-block">
             ← Back to Affiliates
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Saikrupa Coal Movers</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Sai Coal Movers</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
             Expert in coal handling and movement operations with specialized equipment and trained personnel
           </p>
@@ -25,7 +25,7 @@ export default function SaikrupaCoalMovers() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-600 mb-4">
-                Saikrupa Coal Movers specializes in expert coal handling and movement operations. We provide
+                Sai Coal Movers specializes in expert coal handling and movement operations. We provide
                 comprehensive solutions for loading, unloading, and movement of coal at mining sites, power plants, and
                 industrial facilities.
               </p>

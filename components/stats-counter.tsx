@@ -104,7 +104,7 @@ export function StatsCounter() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           <StatItem value={15} label="Years of Experience" suffix="+" icon={Award} variant="light" />
           <StatItem value={10} label="Million Tons Transported" suffix="M+" icon={Layers} variant="dark" />
-          <StatItem value={400} label="Fleet Vehicles" suffix="+" icon={Truck} variant="light" />
+          <StatItem value={400} label="Fleet vehicles (owned and contracted)" suffix="+" icon={Truck} variant="light" />
           <StatItem value={615} label="Professionals" suffix="+" icon={Users} variant="dark" />
         </div>
       </div>

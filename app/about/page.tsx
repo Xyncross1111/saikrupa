@@ -34,9 +34,9 @@ export default function About() {
               and satisfy them with excellence.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              We operate a fleet of dedicated 400+ vehicles both owned and contracted for transportation of coal with
-              well-experienced manpower to carry out day-to-day movement. We strive for excellence through cost
-              efficiency, timely delivery, and customer satisfaction.
+              We operate a fleet of 400+ vehicles (owned and contracted) for coal transportation with well-experienced
+              manpower to carry out day-to-day movement. We strive for excellence through cost efficiency, timely
+              delivery, and customer satisfaction.
             </p>
             <p className="text-gray-600 leading-relaxed">
               The management of the company comprises of 615 highly qualified professionals with years of experience in
@@ -57,7 +57,7 @@ export default function About() {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">400+ dedicated vehicles</span>
+                <span className="text-gray-700">400+ fleet vehicles (owned and contracted)</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
@@ -81,11 +81,11 @@ export default function About() {
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
-              <span className="text-gray-700">Saikrupa Coal Suppliers</span>
+              <span className="text-gray-700">Sai Coal Suppliers</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
-              <span className="text-gray-700">Saikrupa Coal Movers</span>
+              <span className="text-gray-700">Sai Coal Movers</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />

@@ -9,7 +9,7 @@ const serviceDetails = [
     description: "Comprehensive coal transportation services via road and rail",
     image: "/coal-transportation-trucks-logistics-fleet.jpg",
     details: [
-      "Fleet of 400+ dedicated vehicles (owned and contracted)",
+  "Fleet of 400+ vehicles (owned and contracted)",
       "Road and rail transportation modes",
       "Timely delivery guaranteed with real-time tracking",
       "Experienced logistics team with 15+ years expertise",
@@ -19,7 +19,7 @@ const serviceDetails = [
       "Quick redressal of complaints and issues",
     ],
     fullDescription:
-      "Saikrupa Group operates a large network of 400+ vehicles for transporting coal with excellent goodwill among customers for timely delivery. We provide excellent logistics support managed by efficient and qualified personnel. Our services include arrangements of coal cost payments on behalf of clients to be reimbursed later, and liaison with colliery authority for fast loading and redressal of complaints.",
+  "Saikrupa Group operates a large network of 400+ vehicles (owned and contracted) for transporting coal with excellent goodwill among customers for timely delivery. We provide excellent logistics support managed by efficient and qualified personnel. Our services include arrangements of coal cost payments on behalf of clients to be reimbursed later, and liaison with colliery authority for fast loading and redressal of complaints.",
   },
   {
     icon: Pickaxe,

@@ -7,25 +7,28 @@ export default function Contact() {
     <>
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
-        <section className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Contact Us</h1>
-          <p className="text-lg text-gray-600 max-w-3xl">
-            Get in touch with Saikrupa Group for any inquiries about our services or to discuss partnership
-            opportunities.
+      {/* Solid navy hero */}
+      <section className="w-full bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">Contact Us</h1>
+          <p className="text-white/90 max-w-3xl">
+            Get in touch with Saikrupa Group for any inquiries about our services or to discuss partnership opportunities.
           </p>
-        </section>
+        </div>
+      </section>
 
-        {/* Contact Info & Form */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        {/* Contact Info & Form simplified */}
+        <section className="p-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
             <h2 className="text-2xl font-bold text-primary mb-8">Get in Touch</h2>
 
             <div className="space-y-8">
               <div className="flex gap-4">
-                <MapPin className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <MapPin className="w-6 h-6 text-secondary shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-primary mb-2">Address</h3>
                   <p className="text-gray-600">
@@ -41,7 +44,7 @@ export default function Contact() {
               </div>
 
               <div className="flex gap-4">
-                <Phone className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <Phone className="w-6 h-6 text-secondary shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-primary mb-2">Phone</h3>
                   <p className="text-gray-600">
@@ -53,7 +56,7 @@ export default function Contact() {
               </div>
 
               <div className="flex gap-4">
-                <Mail className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <Mail className="w-6 h-6 text-secondary shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-primary mb-2">Email</h3>
                   <p className="text-gray-600">
@@ -65,7 +68,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-12 p-6 bg-gray-50 rounded-lg">
+            <div className="mt-12 p-6 rounded-xl border border-gray-200 bg-gray-50">
               <h3 className="font-semibold text-primary mb-4">Business Hours</h3>
               <p className="text-gray-600 text-sm">
                 Monday - Friday: 9:00 AM - 6:00 PM
@@ -78,7 +81,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-50 p-8 rounded-lg">
+          <div className="relative bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-sm">
             <h2 className="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
             <form className="space-y-4">
               <div>
@@ -128,6 +131,7 @@ export default function Contact() {
                 Send Message
               </button>
             </form>
+          </div>
           </div>
         </section>
       </main>

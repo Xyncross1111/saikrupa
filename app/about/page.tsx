@@ -44,27 +44,23 @@ export default function About() {
               services of the sector.
             </p>
           </div>
-          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-xl border border-gray-200">
+          <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
             <h3 className="text-xl font-serif font-semibold text-primary mb-6">Key Highlights</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
                 <span className="text-gray-700">15+ years of industry experience</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
                 <span className="text-gray-700">10+ million tons transported</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">400+ fleet vehicles (owned and contracted)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
                 <span className="text-gray-700">615+ qualified professionals</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
                 <span className="text-gray-700">10 subsidiary companies</span>
               </li>
             </ul>
@@ -76,43 +72,43 @@ export default function About() {
           <h2 className="text-2xl font-serif font-bold text-primary mb-6">Our Affiliate Companies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Saikrupa Transport</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Sai Coal Suppliers</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Sai Coal Movers</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Saikrupa Bulk Movers</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Saikrupa Green Energy Pvt Ltd</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Saikrupa Service Station</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Vasundhara Coal Carriers Pvt Ltd</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">GBS Pvt Ltd</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Truenest Ventures</span>
             </div>
             <div className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
               <span className="text-gray-700">Saikrupa Trading</span>
             </div>
           </div>
@@ -122,21 +118,21 @@ export default function About() {
         <section className="mb-16">
           <h2 className="text-2xl font-serif font-bold text-primary mb-8">Mission, Vision & Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 border-l-4 border-secondary bg-gradient-to-br from-secondary/5 to-transparent rounded-r-lg">
+            <div className="p-6 border-l-4 border-secondary bg-linear-to-br from-secondary/5 to-transparent rounded-r-lg">
               <Target className="w-8 h-8 text-secondary mb-3" />
               <h3 className="text-lg font-serif font-semibold text-primary mb-3">Mission</h3>
               <p className="text-gray-600 leading-relaxed">
                 Qualitative & Quantitative (Q2) service to the clients with Excellence, Economy & Efficiency (E3)
               </p>
             </div>
-            <div className="p-6 border-l-4 border-accent bg-gradient-to-br from-accent/5 to-transparent rounded-r-lg">
+            <div className="p-6 border-l-4 border-accent bg-linear-to-br from-accent/5 to-transparent rounded-r-lg">
               <Briefcase className="w-8 h-8 text-accent mb-3" />
               <h3 className="text-lg font-serif font-semibold text-primary mb-3">Vision</h3>
               <p className="text-gray-600 leading-relaxed">
                 Explore sources across the globe to perform for excellence for the inland clients
               </p>
             </div>
-            <div className="p-6 border-l-4 border-primary bg-gradient-to-br from-primary/5 to-transparent rounded-r-lg">
+            <div className="p-6 border-l-4 border-primary bg-linear-to-br from-primary/5 to-transparent rounded-r-lg">
               <Users className="w-8 h-8 text-primary mb-3" />
               <h3 className="text-lg font-serif font-semibold text-primary mb-3">Core Values</h3>
               <ul className="text-gray-600 space-y-2 text-sm leading-relaxed">
@@ -150,7 +146,7 @@ export default function About() {
         </section>
 
         {/* Leadership */}
-        <section className="mb-16 bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl border border-gray-200">
+        <section className="mb-16 bg-linear-to-br from-gray-50 to-gray-100 p-8 rounded-xl border border-gray-200">
           <h2 className="text-2xl font-serif font-bold text-primary mb-8">Leadership</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg border border-gray-200">

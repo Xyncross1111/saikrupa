@@ -73,7 +73,7 @@ const services = [
   {
     icon: Wrench,
     title: "Coal Crushing",
-    description: "@ Mobile and 6 semi-mobile coal crushing services for on-site deployment",
+    description: "Mobile and semi-mobile coal crushing services engineered for fast on-site deployment",
     image: "/coal-crushing-equipment-machinery.jpg",
   },
   {
@@ -215,7 +215,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Carousel */}
-      <section className="w-full">
+      <section className="w-full animate-subtle-zoom">
         <Carousel slides={carouselSlides} fullScreen />
       </section>
 
@@ -223,28 +223,30 @@ export default function Home() {
       <StatsCounter />
 
       {/* Mission, Vision, Values */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <section className="border-t border-border/60 bg-white py-12 sm:py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary mb-3 sm:mb-4">
-              Our Purpose
+          <div className="mb-10 text-center sm:mb-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Our Purpose</p>
+            <h2 className="mt-3 text-2xl font-serif font-semibold text-primary sm:text-3xl md:text-4xl">
+              Mission, Vision & Values
             </h2>
-            <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-              Guided by our mission, vision, and core values to deliver excellence
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+              Guided by a commitment to excellence and responsibility across every engagement.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {mvv.map((item, index) => {
               const Icon = item.icon
+              const delayClass = index === 0 ? "" : index === 1 ? "animate-delay-100" : "animate-delay-200"
               return (
                 <div
                   key={index}
-                  className="p-6 sm:p-8 bg-white rounded-xl border border-gray-200 hover:shadow-lg hover:border-secondary transition-all duration-300"
+                  className={`flex flex-col gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8 animate-fade-up ${delayClass}`}
                 >
-                  <Icon className="w-10 sm:w-12 h-10 sm:h-12 text-secondary mb-3 sm:mb-4" />
-                  <h3 className="text-lg sm:text-xl font-serif font-bold text-primary mb-2 sm:mb-3">{item.title}</h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{item.description}</p>
+                  <Icon className="h-10 w-10 text-secondary sm:h-12 sm:w-12" />
+                  <h3 className="text-lg font-serif font-semibold text-primary sm:text-xl">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600 sm:text-base">{item.description}</p>
                 </div>
               )
             })}
@@ -253,49 +255,61 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gray-900">
+      <section className="border-t border-border/60 bg-white py-12 sm:py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-3 sm:mb-4">
-              Our Services
+          <div className="mx-auto mb-10 text-center sm:mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">What We Do</p>
+            <h2 className="mt-3 text-2xl font-serif font-semibold text-primary sm:text-3xl md:text-4xl">
+              Integrated Mining & Logistics Services
             </h2>
-            <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto">
-              Comprehensive coal handling and logistics solutions tailored to meet your business needs
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+              End-to-end capabilities that keep coal supply chains dependable, efficient, and future-ready.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {services.map((service, index) => {
               const Icon = service.icon
+              const delayClass = index % 3 === 1 ? "animate-delay-100" : index % 3 === 2 ? "animate-delay-200" : ""
               return (
                 <div
                   key={index}
-                  className="group bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-secondary hover:shadow-lg transition-all duration-300"
+                  className={`group flex h-full flex-col overflow-hidden rounded-2xl border border-border/80 bg-card shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl animate-fade-up ${delayClass}`}
                 >
-                  <div className="relative h-32 sm:h-40 overflow-hidden bg-gray-700">
+                  <div className="relative h-36 overflow-hidden bg-slate-800 sm:h-40">
                     <img
                       src={service.image || "/placeholder.svg"}
                       alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent"></div>
                   </div>
-                  <div className="p-4 sm:p-6 relative">
-                    <div className="w-10 sm:w-12 h-10 sm:h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-2 sm:mb-3">
-                      <Icon className="w-5 sm:w-6 h-5 sm:h-6 text-secondary" />
+                  <div className="relative flex flex-1 flex-col gap-3 p-5 sm:p-6">
+                    <div className="flex items-center gap-3">
+                      <div className="grid h-12 w-12 place-items-center rounded-lg bg-secondary/15 text-secondary">
+                        <Icon className="h-6 w-6" />
+                      </div>
+                      <h3 className="flex-1 text-lg font-serif font-semibold text-primary sm:text-xl">
+                        {service.title}
+                      </h3>
                     </div>
-                    <h3 className="text-base sm:text-lg font-serif font-bold text-white mb-2">{service.title}</h3>
-                    <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">{service.description}</p>
+                    <p className="text-sm leading-relaxed text-slate-600">
+                      {service.description}
+                    </p>
+                    <span className="mt-auto inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-secondary transition group-hover:gap-3">
+                      Explore
+                      <ArrowRight size={14} />
+                    </span>
                   </div>
                 </div>
               )
             })}
           </div>
 
-          <div className="text-center mt-8 sm:mt-12">
+          <div className="mt-10 text-center sm:mt-14">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-secondary text-primary rounded-lg hover:bg-secondary/90 transition font-medium text-sm sm:text-base"
+              className="inline-flex items-center gap-2 rounded-full border border-primary px-6 py-3 text-sm font-semibold text-primary transition hover:bg-primary hover:text-primary-foreground"
             >
               View All Services <ArrowRight size={18} />
             </Link>
@@ -304,40 +318,47 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <img src="/coal-mining-facility.jpg" alt="Saikrupa Group Facility" className="rounded-xl shadow-lg" />
+      <section className="border-t border-border/60 bg-slate-50 py-12 sm:py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-16">
+            <div className="animate-fade-up">
+              <div className="overflow-hidden rounded-3xl shadow-lg">
+                <img
+                  src="/coal-mining-facility.jpg"
+                  alt="Saikrupa Group Facility"
+                  className="h-full w-full object-cover transition duration-700 hover:scale-105"
+                />
+              </div>
             </div>
-            <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary mb-4 sm:mb-6">
+            <div className="space-y-5 animate-fade-up animate-delay-100">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Who We Are</p>
+              <h2 className="text-2xl font-serif font-semibold text-primary sm:text-3xl md:text-4xl">
                 About Saikrupa Group
               </h2>
-              <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed">
-                Established in 2011, Saikrupa Group has emerged as a leading coal handling and transport agency with
-                over 15 years of industry experience. We specialize in the movement of Indian coal by road and rail,
-                having transported more than 10 million tons across India.
+              <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Established in 2011, Saikrupa Group has grown into one of India&apos;s most dependable coal handling and
+                transport partners. We have moved more than 10 million tons of coal across the country through an
+                integrated road and rail logistics network.
               </p>
-              <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed">
-                Our integrated business model encompasses coal transportation, surface mining, coal crushing, biomass
-                pellet manufacturing, and fuel supply. We operate a fleet of 400+ vehicles (owned and contracted) and
-                employ 615 highly qualified professionals.
+              <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Our diversified services span transportation, surface mining, coal crushing, biomass pellet
+                manufacturing, and bulk fuel supply. A 400+ strong fleet and 615 specialists keep operations precise and
+                responsive.
               </p>
-              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-                Our commitment to excellence, cost efficiency, timely delivery, and customer satisfaction has made us a
-                trusted partner for major coal companies, power plants, and industrial clients across the nation.
+              <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Discipline, transparency, and on-time delivery remain the cornerstones that power lasting partnerships
+                with India&apos;s leading coal companies, power plants, and industrial enterprises.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
                 <Link
                   href="/about"
-                  className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition font-medium text-sm sm:text-base text-center"
+                  className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
                 >
                   Learn More
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-block px-4 sm:px-6 py-2 sm:py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary/5 transition font-medium text-sm sm:text-base text-center"
+                  className="inline-flex items-center justify-center rounded-full border border-primary px-6 py-3 text-sm font-semibold text-primary transition hover:bg-primary hover:text-primary-foreground"
                 >
                   Our Services
                 </Link>
@@ -348,47 +369,51 @@ export default function Home() {
       </section>
 
       {/* Key Initiatives Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-gray-900 to-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-4 sm:mb-6">
-                Key Initiatives That Drive Our Growth
+      <section className="border-t border-border/70 bg-primary py-12 text-primary-foreground sm:py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-14">
+            <div className="space-y-5 animate-fade-up">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Strategic Focus</p>
+              <h2 className="text-2xl font-serif font-semibold sm:text-3xl md:text-4xl">
+                Initiatives Driving Sustainable Growth
               </h2>
-              <p className="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-                We are committed to continuous improvement and operational excellence across all our business units.
+              <p className="text-sm leading-relaxed text-primary-foreground/80 sm:text-base">
+                Technology integration, disciplined execution, and unwavering compliance keep our services dependable
+                across every project and partner engagement.
               </p>
-              <ul className="space-y-3 sm:space-y-4">
+              <ul className="space-y-4 text-sm sm:text-base">
                 {keyInitiatives.map((initiative, index) => (
                   <li key={index} className="flex gap-3">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="mt-1 h-2 w-2 rounded-full bg-secondary/80 shrink-0"></span>
                     <div>
-                      <h4 className="font-semibold text-white text-sm sm:text-base mb-1">{initiative.title}</h4>
-                      <p className="text-gray-400 text-xs sm:text-sm">{initiative.description}</p>
+                      <h4 className="font-semibold text-primary-foreground">{initiative.title}</h4>
+                      <p className="text-primary-foreground/70 text-sm leading-relaxed">
+                        {initiative.description}
+                      </p>
                     </div>
                   </li>
                 ))}
               </ul>
               <Link
                 href="/contact"
-                className="inline-block mt-6 sm:mt-8 px-4 sm:px-6 py-2 sm:py-3 bg-secondary text-primary rounded-lg hover:bg-secondary/90 transition font-semibold text-sm sm:text-base"
+                className="inline-flex items-center justify-center rounded-full bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition hover:bg-secondary/90"
               >
-                Get Started Today
+                Begin a Conversation
               </Link>
             </div>
-            <div className="bg-gray-800/50 rounded-xl p-6 sm:p-8 backdrop-blur-sm border border-gray-700">
-              <div className="space-y-4 sm:space-y-6">
+            <div className="rounded-3xl border border-secondary/30 bg-white/10 p-6 backdrop-blur-md sm:p-8 animate-fade-up animate-delay-100">
+              <div className="space-y-5 sm:space-y-7">
                 <div>
-                  <div className="text-4xl sm:text-5xl font-serif font-bold text-secondary mb-2">15+</div>
-                  <p className="text-sm sm:text-base text-gray-300">Years of Industry Experience</p>
+                  <p className="text-4xl font-serif font-semibold text-secondary sm:text-5xl">15+</p>
+                  <p className="text-sm text-primary-foreground/80 sm:text-base">Years of Industry Experience</p>
                 </div>
                 <div>
-                  <div className="text-4xl sm:text-5xl font-serif font-bold text-secondary mb-2">10M+</div>
-                  <p className="text-sm sm:text-base text-gray-300">Tons of Coal Transported</p>
+                  <p className="text-4xl font-serif font-semibold text-secondary sm:text-5xl">10M+</p>
+                  <p className="text-sm text-primary-foreground/80 sm:text-base">Tons of Coal Transported</p>
                 </div>
                 <div>
-                  <div className="text-4xl sm:text-5xl font-serif font-bold text-secondary mb-2">400+</div>
-                  <p className="text-sm sm:text-base text-gray-300">Fleet vehicles (owned and contracted)</p>
+                  <p className="text-4xl font-serif font-semibold text-secondary sm:text-5xl">400+</p>
+                  <p className="text-sm text-primary-foreground/80 sm:text-base">Fleet Vehicles (Owned & Contracted)</p>
                 </div>
               </div>
             </div>
@@ -397,38 +422,43 @@ export default function Home() {
       </section>
 
       {/* Initiatives Grid Section */}
-      <section className="py-12 sm:py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary mb-3 sm:mb-4">
-              Our Commitment
+      <section className="border-t border-border/60 bg-white py-12 sm:py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center sm:mb-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Our Commitment</p>
+            <h2 className="mt-3 text-2xl font-serif font-semibold text-primary sm:text-3xl md:text-4xl">
+              Safety, Sustainability & Innovation First
             </h2>
-            <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-              We are dedicated to health, safety, environmental sustainability, and continuous innovation
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+              Every initiative is designed to protect people, nurture the environment, and advance performance.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid gap-6 md:grid-cols-3 sm:gap-8">
             {initiatives.map((initiative, index) => {
               const Icon = initiative.icon
+              const delayClass = index === 1 ? "animate-delay-100" : index === 2 ? "animate-delay-200" : ""
               return (
                 <div
                   key={index}
-                  className="rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300"
+                  className={`overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-fade-up ${delayClass}`}
                 >
-                  <img
-                    src={initiative.image || "/placeholder.svg"}
-                    alt={initiative.title}
-                    className="w-full h-40 sm:h-48 object-cover"
-                  />
-                  <div className="p-4 sm:p-6">
-                    <div className="w-10 sm:w-12 h-10 sm:h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                      <Icon className="w-5 sm:w-6 h-5 sm:h-6 text-secondary" />
+                  <div className="relative h-44 overflow-hidden">
+                    <img
+                      src={initiative.image || "/placeholder.svg"}
+                      alt={initiative.title}
+                      className="h-full w-full object-cover transition duration-500 hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/20"></div>
+                  </div>
+                  <div className="space-y-3 p-5 sm:p-6">
+                    <div className="grid h-12 w-12 place-items-center rounded-lg bg-secondary/15 text-secondary">
+                      <Icon className="h-6 w-6" />
                     </div>
-                    <h3 className="text-lg sm:text-xl font-serif font-bold text-primary mb-2 sm:mb-3">
+                    <h3 className="text-lg font-serif font-semibold text-primary sm:text-xl">
                       {initiative.title}
                     </h3>
-                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{initiative.description}</p>
+                    <p className="text-sm leading-relaxed text-slate-600 sm:text-base">{initiative.description}</p>
                   </div>
                 </div>
               )
@@ -438,73 +468,85 @@ export default function Home() {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary mb-3 sm:mb-4">
-              Leadership & Expertise
+      <section className="border-t border-border/60 bg-slate-50 py-12 sm:py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center sm:mb-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Leadership</p>
+            <h2 className="mt-3 text-2xl font-serif font-semibold text-primary sm:text-3xl md:text-4xl">
+              Experience Steering Every Engagement
             </h2>
-            <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-              Guided by visionary leaders with decades of industry experience
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+              A hands-on leadership team ensures strategy, execution, and partnerships remain aligned.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {leadership.map((leader, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300"
-              >
-                <img
-                  src={leader.image || "/placeholder.svg"}
-                  alt={leader.name}
-                  className="w-full h-48 sm:h-64 object-cover"
-                />
-                <div className="p-6 sm:p-8">
-                  <h3 className="text-lg sm:text-xl font-serif font-bold text-primary mb-1">{leader.name}</h3>
-                  <p className="text-secondary font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{leader.role}</p>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{leader.bio}</p>
+          <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+            {leadership.map((leader, index) => {
+              const delayClass = index === 1 ? "animate-delay-100" : ""
+              return (
+                <div
+                  key={index}
+                  className={`overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-fade-up ${delayClass}`}
+                >
+                  <div className="relative h-48 overflow-hidden sm:h-64">
+                    <img
+                      src={leader.image || "/placeholder.svg"}
+                      alt={leader.name}
+                      className="h-full w-full object-cover transition duration-700 hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/15"></div>
+                  </div>
+                  <div className="space-y-3 p-6 sm:p-8">
+                    <h3 className="text-lg font-serif font-semibold text-primary sm:text-xl">{leader.name}</h3>
+                    <p className="text-secondary text-sm font-semibold uppercase tracking-[0.25em] sm:text-xs">
+                      {leader.role}
+                    </p>
+                    <p className="text-sm leading-relaxed text-slate-600 sm:text-base">{leader.bio}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-3 sm:mb-4">
-              Why Choose Saikrupa Group
+      <section className="border-t border-border/70 bg-primary py-12 text-primary-foreground sm:py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center sm:mb-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Why Saikrupa</p>
+            <h2 className="mt-3 text-2xl font-serif font-semibold sm:text-3xl md:text-4xl">
+              Dependable Partnerships With Measurable Outcomes
             </h2>
-            <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto">
-              We deliver excellence through reliability, expertise, and cutting-edge solutions
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-primary-foreground/80 sm:text-base">
+              Reliability, technology, and on-ground expertise translate into consistent performance across millions of
+              tons transported each year.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
             {whyChooseUs.map((item, index) => {
               const Icon = item.icon
+              const delayClass = index % 2 === 1 ? "animate-delay-100" : ""
               return (
                 <div
                   key={index}
-                  className="group bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-secondary transition-all duration-300"
+                  className={`group overflow-hidden rounded-2xl border border-primary/40 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl animate-fade-up ${delayClass}`}
                 >
-                  <div className="relative h-40 sm:h-48 overflow-hidden bg-gray-700">
+                  <div className="relative h-44 overflow-hidden sm:h-52">
                     <img
                       src={item.image || "/placeholder.svg"}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/40 to-transparent"></div>
                   </div>
-                  <div className="p-6 sm:p-8 relative">
-                    <div className="w-12 sm:w-14 h-12 sm:h-14 bg-secondary rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                      <Icon className="w-6 sm:w-7 h-6 sm:h-7 text-white" />
+                  <div className="space-y-3 p-6 sm:p-8">
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-secondary text-secondary-foreground sm:h-14 sm:w-14">
+                      <Icon className="h-6 w-6" />
                     </div>
-                    <h3 className="text-lg sm:text-xl font-serif font-bold text-white mb-2 sm:mb-3">{item.title}</h3>
-                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed">{item.description}</p>
+                    <h3 className="text-lg font-serif font-semibold sm:text-xl">{item.title}</h3>
+                    <p className="text-sm leading-relaxed text-primary-foreground/80 sm:text-base">{item.description}</p>
                   </div>
                 </div>
               )
@@ -528,19 +570,19 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-primary to-primary/80 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 sm:mb-6">
+      <section className="border-t border-border/70 bg-linear-to-r from-primary to-primary/80 py-12 text-primary-foreground sm:py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-serif font-semibold sm:text-3xl md:text-4xl">
             Ready to Partner With Us?
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-            Contact us today to discuss how Saikrupa Group can support your coal and logistics needs
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-primary-foreground/80 sm:text-base md:text-lg">
+            Let&apos;s align on logistics, mining, or renewable energy requirements and craft a dependable execution plan.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-secondary text-primary rounded-lg hover:bg-secondary/90 transition font-semibold text-sm sm:text-base"
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition hover:bg-secondary/90 sm:px-8"
           >
-            Get in Touch
+            Start the Conversation
           </Link>
         </div>
       </section>

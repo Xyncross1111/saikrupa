@@ -39,7 +39,7 @@ export function Marquee({ items, speed = 40 }: MarqueeProps) {
         {[...items, ...items].map((item, index) => (
           <div
             key={index}
-            className="flex-shrink-0 px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg border border-gray-200 hover:border-secondary hover:shadow-md transition-all duration-300"
+            className="shrink-0 rounded-lg border border-border bg-linear-to-br from-white to-muted px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary hover:shadow-md sm:px-6 sm:py-4 md:px-8"
           >
             <p className="font-semibold text-gray-700 text-center text-xs sm:text-sm md:text-base">{item}</p>
           </div>

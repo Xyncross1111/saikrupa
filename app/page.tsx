@@ -51,7 +51,7 @@ const carouselSlides = [
   },
   {
     id: 5,
-    title: "Sai Coal Movers",
+    title: "Sai Coal Traders",
     subtitle: "Specialized bulk movement with safety and speed",
     image: "/coal-transportation-trucks-logistics-fleet.jpg",
   },
@@ -97,23 +97,25 @@ const services = [
 ]
 
 const clients = [
-  "Western Coalfields Limited",
-  "Northern Coalfields Limited",
-  "South Eastern Coalfields Limited",
-  "Mahanadi Coalfields Limited",
-  "Jindal Steel and Power",
-  "Adani Power Limited",
-  "NTPC",
-  "Nabha Power Limited",
-  "Gujarat Electricity Corporation",
-  "Madhya Pradesh Power Generation",
-  "Aryan Coal Beneficiation",
-  "Fuelco Coal India",
+  { name: "Western Coalfields Limited (WCL)", logo: "/logos/wcl.png" },
+  { name: "Northern Coalfields Limited (NCL)", logo: "/logos/ncl.png" },
+  { name: "South Eastern Coalfields Limited (SECL)", logo: "/logos/secl.png" },
+  { name: "Mahanadi Coalfields Limited. (MCL)", logo: "/logos/mcl.png" },
+  { name: "Jindal Steel and Power Limited (JSPL)", logo: "/logos/jindal.png" },
+  { name: "Adani Power Limited (APL)", logo: "/logos/adani.png" },
+  { name: "Gujarat Electricity Corporation Limited (GSECL)", logo: "/logos/gsecl.png" },
+  { name: "National Thermal Power Corporation (NTPC Mouda)", logo: "/logos/ntpc.png" },
+  { name: "Indian Railway Finance Corporation (IRFC)", logo: "/logos/irfc.png" },
+  { name: "Madhya Pradesh Power Generation Company Limited (MPPGCL)", logo: "/logos/mp.png" },
+  { name: "Shri Singaji Thermal Power Project (SSTPP)", logo: "/logos/sstpp.png" },
+  { name: "Aryan Coal Beneficiation Pvt Ltd.", logo: "/logos/acb.png" },
 ]
 
 const mvv = [
   {
+
     icon: Award,
+
     title: "Mission",
     description: "Qualitative & Quantitative service to clients with Excellence, Economy & Efficiency",
   },

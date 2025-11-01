@@ -51,7 +51,7 @@ const carouselSlides = [
   },
   {
     id: 5,
-    title: "Sai Coal Traders",
+    title: "SaiKrupa Traders",
     subtitle: "Specialized bulk movement with safety and speed",
     image: "/coal-transportation-trucks-logistics-fleet.jpg",
   },

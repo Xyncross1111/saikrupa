@@ -59,32 +59,40 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4 text-sm animate-fade-up animate-delay-200">
-            <h4 className="font-semibold tracking-wide text-primary-foreground/80">Reach Us</h4>
-            <div className="flex items-start gap-3 text-primary-foreground/80">
-              <MapPin size={16} className="mt-1" />
-              <p>
-                Yash Complex, No. G-3, Amravati Road, opposite RBI Quarters, near Ravi Nagar Square, Nagpur 440010,
-                India
-              </p>
-            </div>
-            <div className="flex items-center gap-3 text-primary-foreground/80">
-              <Mail size={16} />
-              <a href="mailto:info@saikrupagroup.com" className="break-all transition hover:text-secondary">
-                info@saikrupagroup.com
-              </a>
-            </div>
-            <div className="flex items-center gap-3 text-primary-foreground/80">
-              <Phone size={16} />
-              <a href="tel:+919876543210" className="transition hover:text-secondary">
-                +91 98765 43210
-              </a>
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-2 text-sm">Contact</h4>
+            <div className="space-y-1.5 text-xs">
+              <div className="flex items-start gap-2">
+                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
+                <p>
+                  <span className="font-semibold">Head Office:</span> Yash Complex, Nagpur, Maharashtra 440010
+                </p>
+              </div>
+              {/* TODO: Replace with Registered Address once provided */}
+              {/* <div className="flex items-start gap-2">
+                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
+                <p><span className="font-semibold">Registered Address:</span> ...</p>
+              </div> */}
+              <div className="flex items-center gap-2">
+                <Mail size={14} />
+                <a href="mailto:info@saikrupagroup.com" className="hover:text-secondary transition break-all">
+                  info@saikrupagroup.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone size={14} />
+                <a href="tel:+917350125348" className="hover:text-secondary transition">
+                  +91 73501 25348
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="border-t border-primary-foreground/20 py-4 text-center text-xs text-primary-foreground/70">
-        © {new Date().getFullYear()} Saikrupa Group. All rights reserved.
+
+        <div className="border-t border-primary-foreground/20 pt-4 sm:pt-6">
+          <p className="text-center text-xs text-gray-300">© 2025 Saikrupa Group. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   )

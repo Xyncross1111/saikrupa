@@ -16,9 +16,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="grid h-10 w-10 place-items-center rounded-lg bg-primary text-primary-foreground shadow-sm">
-              <span className="text-sm font-serif font-semibold tracking-wide">SK</span>
-            </div>
+            <img src="/logos/skgroup.png" alt="Saikrupa Group" className="w-8 h-8 object-contain" />
             <div className="hidden sm:block">
               <h1 className="text-base font-serif font-semibold text-primary">Saikrupa Group</h1>
               <p className="text-[11px] uppercase tracking-[0.2em] text-slate-400">Mining & Logistics</p>

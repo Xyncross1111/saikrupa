@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Saikrupa Group - Coal Mining & Logistics",
   description: "Leading coal handling, transportation, and mining services provider in India",
   generator: "v0.app",
+  icons: {
+    icon: '/logos/skgroup.png'
+  }
 }
 
 export default function RootLayout({

@@ -17,9 +17,9 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <img src="/logos/skgroup.png" alt="Saikrupa Group" className="w-8 h-8 object-contain" />
-            <div className="hidden sm:block">
-              <h1 className="text-base font-serif font-semibold text-primary">Saikrupa Group</h1>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-slate-400">Mining & Logistics</p>
+            <div className="block">
+              <h1 className="text-sm sm:text-base font-serif font-semibold text-primary">Saikrupa Group</h1>
+              <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-slate-400">Mining &amp; Logistics</p>
             </div>
           </Link>
 

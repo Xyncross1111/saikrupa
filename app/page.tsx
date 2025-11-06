@@ -43,18 +43,6 @@ const carouselSlides = [
     subtitle: "Biomass pellets for a greener future",
     image: "/renewable-energy-landscape.jpg",
   },
-  {
-    id: 4,
-    title: "Truenest Ventures",
-    subtitle: "Innovation-focused affiliate driving new growth",
-    image: "/industrial-innovation-technology.jpg",
-  },
-  {
-    id: 5,
-    title: "SaiKrupa Traders",
-    subtitle: "Specialized bulk movement with safety and speed",
-    image: "/coal-transportation-trucks-logistics-fleet.jpg",
-  },
 ]
 
 const services = [
@@ -488,9 +476,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {leadership.map((leader, index) => {
-              const delayClass = index === 1 ? "animate-delay-100" : ""
+              const delayClass = index === 1 ? "animate-delay-100" : index === 2 ? "animate-delay-200" : ""
               return (
                 <div
                   key={index}

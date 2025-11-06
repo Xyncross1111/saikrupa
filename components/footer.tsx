@@ -5,24 +5,8 @@ export function Footer() {
   return (
     <footer className="border-t border-border/80 bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="space-y-4 animate-fade-up">
-            <div className="flex items-center gap-3">
-              <div className="grid h-10 w-10 place-items-center rounded-md bg-secondary text-secondary-foreground">
-                <span className="text-sm font-serif font-semibold">SK</span>
-              </div>
-              <div>
-                <p className="font-serif text-lg font-semibold">Saikrupa Group</p>
-                <p className="text-xs uppercase tracking-[0.35em] text-primary-foreground/70">Established 2011</p>
-              </div>
-            </div>
-            <p className="text-sm text-primary-foreground/80">
-              Trusted coal mining and logistics partner delivering reliable transportation, mining, crushing, liaison,
-              and renewable energy solutions across India.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6 text-sm animate-fade-up animate-delay-100">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-2 gap-6 text-sm animate-fade-up">
             <div>
               <h4 className="mb-3 font-semibold tracking-wide text-primary-foreground/80">Company</h4>
               <ul className="space-y-2 text-primary-foreground/70">
@@ -64,16 +48,19 @@ export function Footer() {
             <h4 className="font-semibold mb-2 text-sm">Contact</h4>
             <div className="space-y-1.5 text-xs">
               <div className="flex items-start gap-2">
-                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
+                <MapPin size={14} className="mt-0.5 shrink-0" />
                 <p>
                   <span className="font-semibold">Head Office:</span> Yash Complex, Nagpur, Maharashtra 440010
                 </p>
               </div>
               {/* TODO: Replace with Registered Address once provided */}
-              {/* <div className="flex items-start gap-2">
-                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
-                <p><span className="font-semibold">Registered Address:</span> ...</p>
-              </div> */}
+              <div className="flex items-start gap-2">
+                <MapPin size={14} className="mt-0.5 shrink-0" />
+                <p>
+                Yash Complex, No. G-3, Amravati Road, opposite RBI Quarters, near Ravi Nagar Square, Nagpur 440010,
+                India
+              </p>
+              </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} />
                 <a href="mailto:info@saikrupagroup.com" className="hover:text-secondary transition break-all">

@@ -12,6 +12,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center gap-2">
+          {/* Logo */}
             <img src="/logos/skgroup.png" alt="Saikrupa Group" className="w-8 h-8 object-contain" />
             <div className="hidden sm:block">
               <h1 className="text-base font-serif font-bold text-primary">Saikrupa Group</h1>

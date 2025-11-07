@@ -127,6 +127,12 @@
     scroll-behavior: smooth;
   }
 
+  /* Prevent page-wide horizontal scroll caused by edge-to-edge elements */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }

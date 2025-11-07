@@ -26,15 +26,16 @@ export function Carousel({ slides, fullScreen = false }: CarouselProps) {
   const prev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
   const next = () => setCurrent((prev) => (prev + 1) % slides.length)
 
+  const wrapperClass = `relative overflow-hidden ${
+    fullScreen ? "h-svh rounded-none" : "w-full h-56 sm:h-80 md:h-96 lg:h-[500px] rounded-lg"
+  }`
+
+  const wrapperStyle: React.CSSProperties | undefined = fullScreen
+    ? { width: "100vw", marginLeft: "calc(50% - 50vw)" }
+    : undefined
+
   return (
-    <div
-      className={
-        `relative overflow-hidden ` +
-        (fullScreen
-          ? "w-screen h-svh rounded-none"
-          : "w-full h-56 sm:h-80 md:h-96 lg:h-[500px] rounded-lg")
-      }
-    >
+    <div className={wrapperClass} style={wrapperStyle}>
       {slides.map((slide, index) => (
         <div
           key={slide.id}

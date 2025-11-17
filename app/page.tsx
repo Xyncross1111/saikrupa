@@ -148,6 +148,12 @@ const whyChooseUs = [
 
 const leadership = [
   {
+    name: "Mr. Pardeep Mor",
+    role: "Managing Director & Co-Founder",
+    bio: "A visionary entrepreneur and co-founder of Saikrupa Group, Mr. Pardeep Mor has been an integral part of the company's journey since its inception. With decades of experience in the coal and transportation industries, he has contributed immensely to the group's growth and diversification. His strong leadership, operational expertise, and strategic foresight have helped establish Saikrupa Group as a trusted and reputed name across multiple sectors. He continues to guide the organization toward sustained success and excellence.",
+    image: "/professional-businessman.png",
+  },
+  {
     name: "Shri Dilbag Singh Dhanda",
     role: "Managing Director & Co-Founder",
     bio: "A veteran entrepreneur with decades of experience in the coal and industrial sectors, Shri Dilbag Singh Dhanda has been the driving force behind the growth and success of Saikrupa Group. His deep industry knowledge, strong leadership, and strategic vision have transformed the group into a trusted name and an industry leader. Under his guidance, the company continues to expand its presence with a commitment to excellence, integrity, and innovation.",
@@ -158,12 +164,6 @@ const leadership = [
     role: "Executive Director",
     bio: "An MBA in Human Resource and Marketing, Mr. Nikhil Dhanda brings a modern, result-driven approach to the Saikrupa Group. His dynamic leadership, strategic vision, and strong industry relationships contribute to operational excellence and continuous business growth. With a keen focus on innovation and diversification, he is leading the group's expansion into emerging sectors, including renewable energy and sustainable development.",
     image: "/professional-executive.jpg",
-  },
-  {
-    name: "Mr. Pardeep Mor",
-    role: "Managing Director & Co-Founder",
-    bio: "A visionary entrepreneur and co-founder of Saikrupa Group, Mr. Pardeep Mor has been an integral part of the company's journey since its inception. With decades of experience in the coal and transportation industries, he has contributed immensely to the group's growth and diversification. His strong leadership, operational expertise, and strategic foresight have helped establish Saikrupa Group as a trusted and reputed name across multiple sectors. He continues to guide the organization toward sustained success and excellence.",
-    image: "/professional-businessman.png",
   },
 ]
 

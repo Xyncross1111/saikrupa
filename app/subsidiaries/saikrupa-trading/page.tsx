@@ -13,10 +13,10 @@ export default function SaikrupaTradingPage() {
             <span className="mx-2">/</span>
             <Link href="/affiliates" className="hover:text-primary">Affiliates</Link>
             <span className="mx-2">/</span>
-            <span className="text-gray-700">Saikrupa Trading</span>
+            <span className="text-gray-700">Saikrupa Traders</span>
           </nav>
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary">Saikrupa Trading</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary">Saikrupa Traders</h1>
           <p className="mt-2 text-gray-700 max-w-2xl">
             Commerce-focused unit handling coal and multi-sector trading activities with a compliance-first approach.
           </p>
@@ -56,7 +56,7 @@ export default function SaikrupaTradingPage() {
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg border border-gray-200 p-6">
               <h3 className="text-base font-semibold text-gray-900">Operating Principles</h3>
               <p className="mt-3 text-sm text-gray-700 leading-6">
-                Saikrupa Trading emphasizes compliance, documentation accuracy, and timely execution. We aim to create
+                Saikrupa Traders emphasizes compliance, documentation accuracy, and timely execution. We aim to create
                 repeatable value through dependable sourcing and partnerships.
               </p>
             </div>

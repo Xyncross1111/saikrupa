@@ -77,15 +77,15 @@ export default function About() {
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Sai Coal Suppliers</span>
+              <span className="text-gray-700">Saikrupa Coal Suppliers</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Sai Coal Movers</span>
+              <span className="text-gray-700">Saikrupa Coal Movers</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Bulk Movers</span>
+              <span className="text-gray-700">Sai Bulk Movers</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
@@ -109,7 +109,7 @@ export default function About() {
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Trading</span>
+              <span className="text-gray-700">Saikrupa Traders</span>
             </div>
           </div>
         </section>

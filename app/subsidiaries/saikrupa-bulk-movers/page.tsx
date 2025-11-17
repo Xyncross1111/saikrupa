@@ -13,7 +13,7 @@ export default function SaikrupaBulkMovers() {
           <Link href="/affiliates" className="text-secondary hover:text-secondary/80 mb-4 inline-block">
             ← Back to Affiliates
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Saikrupa Bulk Movers</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">sai Bulk Movers</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
             Comprehensive bulk material transportation and logistics solutions
           </p>
@@ -25,7 +25,7 @@ export default function SaikrupaBulkMovers() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-600 mb-4">
-                Saikrupa Bulk Movers provides comprehensive bulk material transportation and logistics solutions. Beyond
+                Sai Bulk Movers provides comprehensive bulk material transportation and logistics solutions. Beyond
                 coal, we handle various bulk materials including minerals, ores, and industrial commodities.
               </p>
               <p className="text-gray-600 mb-4">

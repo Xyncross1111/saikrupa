@@ -10,7 +10,7 @@ const subsidiaries = [
     href: "/subsidiaries/saikrupa-transport",
   },
   {
-    name: "Sai Coal Suppliers",
+    name: "Saikrupa Coal Suppliers",
     description: "Direct coal supply and sourcing services for industrial clients",
     focus: "Coal Supply",
     href: "/subsidiaries/saikrupa-coal-suppliers",
@@ -22,7 +22,7 @@ const subsidiaries = [
     href: "/subsidiaries/saikrupa-coal-movers",
   },
   {
-    name: "Saikrupa Bulk Movers",
+    name: "Sai Bulk Movers",
     description: "Comprehensive bulk material transportation and logistics",
     focus: "Bulk Logistics",
     href: "/subsidiaries/saikrupa-bulk-movers",
@@ -58,7 +58,7 @@ const subsidiaries = [
     href: "/subsidiaries/truenest-ventures",
   },
   {
-    name: "Saikrupa Trading",
+    name: "Saikrupa Traders",
     description: "Coal trading and multi-sector commerce with a compliance-first approach",
     focus: "Trading",
     href: "/subsidiaries/saikrupa-trading",

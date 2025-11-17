@@ -13,7 +13,7 @@ export default function SaikrupaCoalSuppliers() {
           <Link href="/affiliates" className="text-secondary hover:text-secondary/80 mb-4 inline-block">
             ← Back to Affiliates
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Sai Coal Suppliers</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Saikrupa Coal Suppliers</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
             Direct coal supply and sourcing services for industrial clients across India
           </p>
@@ -25,7 +25,7 @@ export default function SaikrupaCoalSuppliers() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-600 mb-4">
-                Sai Coal Suppliers specializes in direct coal supply and sourcing services for industrial clients.
+                Saikrupa Coal Suppliers specializes in direct coal supply and sourcing services for industrial clients.
                 We provide consistent supply of specified coal to consumers through various sourcing channels including
                 long-term linkages and spot auctions.
               </p>

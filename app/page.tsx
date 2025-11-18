@@ -72,7 +72,7 @@ const services = [
   },
   {
     icon: Zap,
-    title: "Coal Liaison",
+    title: "Coal liasioning",
     description: "Comprehensive coal linkage and sourcing services for all sectors",
     image: "/coal-liaison-sourcing-supply-chain.jpg",
   },
@@ -151,7 +151,7 @@ const leadership = [
     name: "Mr. Pardeep Mor",
     role: "Managing Director & Co-Founder",
     bio: "A visionary entrepreneur and co-founder of Saikrupa Group, Mr. Pardeep Mor has been an integral part of the company's journey since its inception. With decades of experience in the coal and transportation industries, he has contributed immensely to the group's growth and diversification. His strong leadership, operational expertise, and strategic foresight have helped establish Saikrupa Group as a trusted and reputed name across multiple sectors. He continues to guide the organization toward sustained success and excellence.",
-    image: "/professional-businessman.png",
+    image: "/placeholderpardeep.webp",
   },
   {
     name: "Shri Dilbag Singh Dhanda",
@@ -202,6 +202,39 @@ const initiatives = [
     title: "Innovation",
     description: "Continuous improvement through technology adoption and process optimization in all operations.",
     image: "/industrial-innovation-technology.jpg",
+  },
+]
+
+const csrActivities = [
+  {
+    title: "Healthcare Support",
+    description:
+      "Providing medical assistance and support for underprivileged individuals, including regular contributions to Savantra Samu Seva Samiti for the welfare of the poor, community development, and free medical treatment.",
+  },
+  {
+    title: "Education & Empowerment",
+    description:
+      "Donating books, stationery, and study materials to students in need, ensuring access to education for all.",
+  },
+  {
+    title: "Food Donation & Animal Welfare",
+    description:
+      "Regularly donating food to Gaushalas (cow shelters) and organizing food drives for the needy.",
+  },
+  {
+    title: "Orphanage Support",
+    description:
+      "Extending continuous help to Swami Vivekanand Orphanage Student Home at Rajura through donations, daily essentials, and infrastructural assistance.",
+  },
+  {
+    title: "Religious & Cultural Development",
+    description:
+      "Supporting temple construction and renovation projects in and around Nagpur, along with contributions to the International Jaat Dharamshala in Haryana for its development and upkeep.",
+  },
+  {
+    title: "Environmental Initiatives",
+    description:
+      "Promoting sustainability by planting trees across all our project locations and encouraging eco-friendly practices within our operations.",
   },
 ]
 
@@ -364,54 +397,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Key Initiatives Section */}
+      {/* Corporate Social Responsibility Section */}
       <section className="border-t border-border/70 bg-primary py-12 text-primary-foreground sm:py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-14">
-            <div className="space-y-5 animate-fade-up">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Strategic Focus</p>
-              <h2 className="text-2xl font-serif font-semibold sm:text-3xl md:text-4xl">
-                Initiatives Driving Sustainable Growth
-              </h2>
+          <div className="space-y-8">
+            <div className="space-y-5 text-center animate-fade-up">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Corporate Social Responsibility</p>
+              <h2 className="text-2xl font-serif font-semibold sm:text-3xl md:text-4xl">Corporate Social Responsibility (CSR)</h2>
               <p className="text-sm leading-relaxed text-primary-foreground/80 sm:text-base">
-                Technology integration, disciplined execution, and unwavering compliance keep our services dependable
-                across every project and partner engagement.
+                At Saikrupa Group, we believe that true progress is measured not only by business success but also by the positive difference we make in people’s lives. Guided by our values of compassion, integrity, and community service, our CSR initiatives focus on improving health, education, the environment, and social welfare.
               </p>
-              <ul className="space-y-4 text-sm sm:text-base">
-                {keyInitiatives.map((initiative, index) => (
-                  <li key={index} className="flex gap-3">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-secondary/80 shrink-0"></span>
-                    <div>
-                      <h4 className="font-semibold text-primary-foreground">{initiative.title}</h4>
-                      <p className="text-primary-foreground/70 text-sm leading-relaxed">
-                        {initiative.description}
-                      </p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition hover:bg-secondary/90"
-              >
-                Begin a Conversation
-              </Link>
+              <p className="text-sm leading-relaxed text-primary-foreground/80 sm:text-base">
+                Over the years, Saikrupa Group has actively contributed to various causes that uplift and strengthen society.
+              </p>
             </div>
             <div className="rounded-3xl border border-secondary/30 bg-white/10 p-6 backdrop-blur-md sm:p-8 animate-fade-up animate-delay-100">
-              <div className="space-y-5 sm:space-y-7">
-                <div>
-                  <p className="text-4xl font-serif font-semibold text-secondary sm:text-5xl">15+</p>
-                  <p className="text-sm text-primary-foreground/80 sm:text-base">Years of Industry Experience</p>
-                </div>
-                <div>
-                  <p className="text-4xl font-serif font-semibold text-secondary sm:text-5xl">10M+</p>
-                  <p className="text-sm text-primary-foreground/80 sm:text-base">Tons of Coal Transported</p>
-                </div>
-                <div>
-                  <p className="text-4xl font-serif font-semibold text-secondary sm:text-5xl">400+</p>
-                  <p className="text-sm text-primary-foreground/80 sm:text-base">Fleet Vehicles (Owned & Contracted)</p>
-                </div>
+              <h3 className="text-xl font-serif font-semibold text-secondary sm:text-2xl">Our Key CSR Activities</h3>
+              <div className="mt-6 grid gap-6 md:grid-cols-2">
+                {csrActivities.map((activity, index) => (
+                  <div
+                    key={index}
+                    className="group overflow-hidden rounded-2xl border border-primary/40 bg-white/10 p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:p-6"
+                  >
+                    <h4 className="text-lg font-serif font-semibold text-primary-foreground sm:text-xl">
+                      {activity.title}
+                    </h4>
+                    <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80 sm:text-base">
+                      {activity.description}
+                    </p>
+                  </div>
+                ))}
               </div>
+            </div>
+            <div className="text-center animate-fade-up animate-delay-200">
+              <p className="text-sm leading-relaxed text-primary-foreground/80 sm:text-base">
+                Through these initiatives, Saikrupa Group remains committed to building a better, healthier, and more sustainable future for the communities we serve.
+              </p>
             </div>
           </div>
         </div>

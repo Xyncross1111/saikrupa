@@ -50,31 +50,31 @@ const services = [
     icon: Truck,
     title: "Coal Transportation",
     description: "Road and rail transportation of coal with 400+ fleet vehicles (owned and contracted) and real-time tracking",
-    image: "/coal-transportation-trucks-logistics.jpg",
+    image: "/coal_transportation.jpg",
   },
   {
     icon: Pickaxe,
     title: "Surface Mining",
     description: "Expert overburden removal and coal extraction services with proven track record",
-    image: "/surface-mining-excavation-equipment.jpg",
+    image: "/surface_mining.jpg",
   },
   {
     icon: Wrench,
     title: "Coal Crushing",
     description: "Mobile and semi-mobile coal crushing services engineered for fast on-site deployment",
-    image: "/coal-crushing-equipment-machinery.jpg",
+    image: "/coal_crushing.jpg",
   },
   {
     icon: Leaf,
     title: "Biomass Pellets",
     description: "Eco-friendly renewable fuel production at 75 MT/day capacity",
-    image: "/biomass-pellets-renewable-energy.jpg",
+    image: "/biomass_pilletes.jpg",
   },
   {
     icon: Zap,
-    title: "Coal liasioning",
+    title: "Coal Liasioning",
     description: "Comprehensive coal linkage and sourcing services for all sectors",
-    image: "/coal-liaison-sourcing-supply-chain.jpg",
+    image: "/coal_liaisoning.jpg",
   },
   {
     icon: Fuel,
@@ -130,7 +130,7 @@ const whyChooseUs = [
     icon: Clock,
     title: "Timely Delivery",
     description: "Dedicated fleet of 400+ vehicles (owned and contracted) ensuring on-time delivery every time",
-    image: "/logistics-fleet-delivery-trucks.jpg",
+    image: "/timely_delivery.jpg",
   },
   {
     icon: Users,
@@ -142,7 +142,7 @@ const whyChooseUs = [
     icon: Lightning,
     title: "Advanced Equipment",
     description: "State-of-the-art crushing and mining equipment with latest technology",
-    image: "/advanced-mining-equipment-technology.jpg",
+    image: "/advanced_equipment.jpg",
   },
 ]
 
@@ -188,7 +188,7 @@ const initiatives = [
     title: "Health & Safety",
     description:
       "Safety is our highest priority. We maintain rigorous protocols ensuring the wellbeing of our team and stakeholders.",
-    image: "/workplace-safety-training.png",
+    image: "/health_safety.webp",
   },
   {
     icon: LeafIcon,
@@ -201,7 +201,7 @@ const initiatives = [
     icon: Lightbulb,
     title: "Innovation",
     description: "Continuous improvement through technology adoption and process optimization in all operations.",
-    image: "/industrial-innovation-technology.jpg",
+    image: "/innovation.jpg",
   },
 ]
 
@@ -300,9 +300,11 @@ export default function Home() {
             {services.map((service, index) => {
               const Icon = service.icon
               const delayClass = index % 3 === 1 ? "animate-delay-100" : index % 3 === 2 ? "animate-delay-200" : ""
+              const slug = service.title.toLowerCase().replace(/\s+/g, '-')
               return (
-                <div
+                <Link
                   key={index}
+                  href={`/services/${slug}`}
                   className={`group flex h-full flex-col overflow-hidden rounded-2xl border border-border/80 bg-card shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl animate-fade-up ${delayClass}`}
                 >
                   <div className="relative h-36 overflow-hidden bg-slate-800 sm:h-40">
@@ -330,7 +332,7 @@ export default function Home() {
                       <ArrowRight size={14} />
                     </span>
                   </div>
-                </div>
+                </Link>
               )
             })}
           </div>
@@ -351,9 +353,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-16">
             <div className="animate-fade-up">
-              <div className="overflow-hidden rounded-3xl shadow-lg">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-lg">
                 <img
-                  src="/coal-mining-facility.jpg"
+                  src="/who_are_we.jpg"
                   alt="Saikrupa Group Facility"
                   className="h-full w-full object-cover transition duration-700 hover:scale-105"
                 />
@@ -464,7 +466,7 @@ export default function Home() {
                     <img
                       src={initiative.image || "/placeholder.svg"}
                       alt={initiative.title}
-                      className="h-full w-full object-cover transition duration-500 hover:scale-105"
+                      className={`h-full w-full object-cover transition duration-500 hover:scale-105 ${index === 2 ? 'object-[center_20%]' : ''}`}
                     />
                     <div className="absolute inset-0 bg-black/20"></div>
                   </div>
@@ -548,9 +550,9 @@ export default function Home() {
               return (
                 <div
                   key={index}
-                  className={`group overflow-hidden rounded-2xl border border-primary/40 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl animate-fade-up ${delayClass}`}
+                  className={`group flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl animate-fade-up ${delayClass}`}
                 >
-                  <div className="relative h-44 overflow-hidden sm:h-52">
+                  <div className="relative aspect-[16/9] w-full overflow-hidden">
                     <img
                       src={item.image || "/placeholder.svg"}
                       alt={item.title}
@@ -558,12 +560,12 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/40 to-transparent"></div>
                   </div>
-                  <div className="space-y-3 p-6 sm:p-8">
-                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-secondary text-secondary-foreground sm:h-14 sm:w-14">
-                      <Icon className="h-6 w-6" />
+                  <div className="flex flex-col space-y-2 p-4 sm:p-5">
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
+                      <Icon className="h-5 w-5" />
                     </div>
-                    <h3 className="text-lg font-serif font-semibold sm:text-xl">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-primary-foreground/80 sm:text-base">{item.description}</p>
+                    <h3 className="text-base font-serif font-semibold sm:text-lg">{item.title}</h3>
+                    <p className="text-sm leading-relaxed text-primary-foreground/80">{item.description}</p>
                   </div>
                 </div>
               )

@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import Link from "next/link"
 import { Truck, Pickaxe, Zap, Leaf, Wrench, Fuel, ArrowRight } from "lucide-react"
 
 const serviceDetails = [
@@ -7,7 +8,7 @@ const serviceDetails = [
     icon: Truck,
     title: "Coal Transportation",
     description: "Comprehensive coal transportation services via road and rail",
-    image: "/coal-transportation-trucks-logistics-fleet.jpg",
+    image: "/coal_transportation.jpg",
     details: [
   "Fleet of 400+ vehicles (owned and contracted)",
       "Road and rail transportation modes",
@@ -25,7 +26,7 @@ const serviceDetails = [
     icon: Pickaxe,
     title: "Surface Mining",
     description: "Expert surface mining and overburden removal services",
-    image: "/surface-mining-excavation-equipment-coal-extractio.jpg",
+    image: "/surface_mining.jpg",
     details: [
       "Overburden removal expertise",
       "Coal extraction services",
@@ -43,7 +44,7 @@ const serviceDetails = [
     icon: Wrench,
     title: "Coal Crushing",
     description: "Coal crushing services with mobile and semi-mobile equipment",
-    image: "/coal-crushing-equipment-machinery-industrial.jpg",
+    image: "/coal_crushing.jpg",
     details: [
       "2 mobile crushers (fully operational)",
       "6 semi-mobile crushers (fully operational)",
@@ -60,7 +61,7 @@ const serviceDetails = [
     icon: Leaf,
     title: "Biomass Pellets",
     description: "Sustainable renewable fuel production for modern energy needs",
-    image: "/biomass-pellets-renewable-energy-sustainable-fuel.jpg",
+    image: "/biomass_pilletes.jpg",
     details: [
       "75 MT/day production capacity",
       "State-of-the-art facility in Narwana, District Jind, Haryana",
@@ -76,9 +77,9 @@ const serviceDetails = [
   },
   {
     icon: Zap,
-    title: "Coal Liaison",
+    title: "Coal Liasioning",
     description: "Complete coal sourcing and linkage services for all sectors",
-    image: "/coal-liaison-sourcing-supply-chain-management.jpg",
+    image: "/coal_liaisoning.jpg",
     details: [
       "Coal linkage arrangements at notified rates",
       "Non-regulated sector consumer services",
@@ -96,7 +97,7 @@ const serviceDetails = [
     icon: Fuel,
     title: "Fuel Station",
     description: "Bulk fuel supply for industrial and commercial clients",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "/fuel-station-industrial-supply.jpg",
     details: [
       "Bulk fuel supply operations",
       "Dedicated fuel station in Chandrapur, Maharashtra",
@@ -133,9 +134,11 @@ export default function Services() {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {serviceDetails.map((service, index) => {
             const Icon = service.icon
+            const slug = service.title.toLowerCase().replace(/\s+/g, '-')
             return (
-              <div
+              <Link
                 key={index}
+                href={`/services/${slug}`}
                 className="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-secondary transition-all duration-300 bg-white"
               >
                 <div className="relative h-40 sm:h-48 overflow-hidden bg-gray-200">
@@ -158,19 +161,11 @@ export default function Services() {
                   <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  <p className="text-xs sm:text-sm text-gray-600 mb-4 leading-relaxed italic">
+                  <p className="text-xs sm:text-sm text-gray-600 mb-4 leading-relaxed italic line-clamp-3">
                     {service.fullDescription}
                   </p>
-                  <ul className="space-y-2 sm:space-y-3">
-                    {service.details.map((detail, idx) => (
-                      <li key={idx} className="flex items-center gap-2 sm:gap-3 text-gray-700">
-                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-secondary rounded-full flex-shrink-0"></span>
-                        <span className="text-xs sm:text-sm">{detail}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
+              </Link>
             )
           })}
         </section>

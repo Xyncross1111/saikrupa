@@ -95,7 +95,7 @@ const clients = [
   { name: "National Thermal Power Corporation (NTPC Mouda)", logo: "/logos/ntpc.png" },
   { name: "Indian Railway Finance Corporation (IRFC)", logo: "/logos/irfc.png" },
   { name: "Madhya Pradesh Power Generation Company Limited (MPPGCL)", logo: "/logos/mp.png" },
-  { name: "Shri Singaji Thermal Power Project (SSTPP)", logo: "/logos/sstpp.png" },
+  { name: "Shri Singaji Thermal Power Project (SSTPP)", logo: "/logos/sstp.png" },
   { name: "Aryan Coal Beneficiation Pvt Ltd.", logo: "/logos/acb.png" },
 ]
 

@@ -94,7 +94,7 @@ function StatItem({ value, label, suffix = "", icon: Icon, variant = "light" }: 
 export function StatsCounter() {
   return (
     <section className="border-y border-border/70 bg-slate-50/80 py-12 sm:py-16 md:py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
         <div className="grid gap-4 sm:gap-6 md:grid-cols-4">
           <StatItem value={15} label="Years of Experience" suffix="+" icon={Award} />
           <StatItem value={10} label="Million Tons Transported" suffix="M+" icon={Layers} variant="dark" />

@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function VasundharaCoalCarriers() {
@@ -7,11 +8,12 @@ export default function VasundharaCoalCarriers() {
     <>
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Hero Section */}
-        <section className="py-12 md:py-16">
-          <Link href="/affiliates" className="text-secondary hover:text-secondary/80 mb-4 inline-block">
-            ← Back to Affiliates
+        <section className="mb-8 sm:mb-12">
+          <Link href="/affiliates" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-secondary transition mb-4">
+            <ArrowRight size={14} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+            Back to Affiliates
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Vasundhara Coal Carriers Pvt Ltd</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
@@ -62,32 +64,38 @@ export default function VasundharaCoalCarriers() {
         <section className="py-12 border-t border-gray-200">
           <h2 className="text-3xl font-bold text-primary mb-6">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Coal Transportation</h3>
-              <p className="text-gray-600">
-                Specialized transportation of coal from mines to power plants and industrial facilities with proper
-                handling and documentation.
-              </p>
-            </div>
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Fleet Management</h3>
-              <p className="text-gray-600">
-                Professional management of coal carrier fleet with regular maintenance and compliance with all
-                regulations.
-              </p>
-            </div>
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Route Optimization</h3>
-              <p className="text-gray-600">
-                Efficient route planning and optimization to ensure timely delivery and cost-effective operations.
-              </p>
-            </div>
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Quality Assurance</h3>
-              <p className="text-gray-600">
-                Comprehensive quality checks and documentation to ensure coal quality throughout transportation.
-              </p>
-            </div>
+            <Link href="/services/coal-transportation" className="group">
+              <div className="border border-gray-200 p-6 rounded-lg h-full transition-all duration-300 hover:border-secondary hover:shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Coal Transportation</h3>
+                <p className="text-gray-600">
+                  Specialized transportation of coal from mines to power plants and industrial facilities.
+                </p>
+              </div>
+            </Link>
+            <Link href="/services/coal-liasioning" className="group">
+              <div className="border border-gray-200 p-6 rounded-lg h-full transition-all duration-300 hover:border-secondary hover:shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Coal Liaising</h3>
+                <p className="text-gray-600">
+                  Professional liaison services with regulatory compliance and quality assurance.
+                </p>
+              </div>
+            </Link>
+            <Link href="/services/surface-mining" className="group">
+              <div className="border border-gray-200 p-6 rounded-lg h-full transition-all duration-300 hover:border-secondary hover:shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Surface Mining</h3>
+                <p className="text-gray-600">
+                  Efficient mining operations with modern equipment and expert teams.
+                </p>
+              </div>
+            </Link>
+            <Link href="/services/coal-crushing" className="group">
+              <div className="border border-gray-200 p-6 rounded-lg h-full transition-all duration-300 hover:border-secondary hover:shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Coal Crushing</h3>
+                <p className="text-gray-600">
+                  Professional coal crushing services with comprehensive quality checks.
+                </p>
+              </div>
+            </Link>
           </div>
         </section>
 

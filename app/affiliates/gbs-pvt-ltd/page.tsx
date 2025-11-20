@@ -1,21 +1,23 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
-export default function SaikrupaBulkMovers() {
+export default function GBSPvtLtd() {
   return (
     <>
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Hero Section */}
-        <section className="py-12 md:py-16">
-          <Link href="/affiliates" className="text-secondary hover:text-secondary/80 mb-4 inline-block">
-            ← Back to Affiliates
+        <section className="mb-8 sm:mb-12">
+          <Link href="/affiliates" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-secondary transition mb-4">
+            <ArrowRight size={14} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+            Back to Affiliates
           </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">sai Bulk Movers</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">GBS Pvt Ltd</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
-            Comprehensive bulk material transportation and logistics solutions
+            General business services supporting Saikrupa Group operations and strategic initiatives
           </p>
         </section>
 
@@ -25,12 +27,13 @@ export default function SaikrupaBulkMovers() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-600 mb-4">
-                Sai Bulk Movers provides comprehensive bulk material transportation and logistics solutions. Beyond
-                coal, we handle various bulk materials including minerals, ores, and industrial commodities.
+                GBS Pvt Ltd provides comprehensive general business services that support the operations and strategic
+                initiatives of Saikrupa Group. Our services span administrative, operational, and support functions that
+                enable the group to focus on core business activities.
               </p>
               <p className="text-gray-600 mb-4">
-                Our extensive network and specialized equipment enable us to move bulk materials efficiently and
-                cost-effectively across India.
+                We provide specialized support services that enhance efficiency and effectiveness across all group
+                subsidiaries.
               </p>
             </div>
             <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-lg">
@@ -38,19 +41,19 @@ export default function SaikrupaBulkMovers() {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-3">•</span>
-                  <span>Multi-commodity bulk transportation</span>
+                  <span>Administrative support services</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-3">•</span>
-                  <span>Specialized equipment for various materials</span>
+                  <span>Operational support functions</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-3">•</span>
-                  <span>Pan-India logistics network</span>
+                  <span>Strategic business support</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-3">•</span>
-                  <span>Cost-effective solutions</span>
+                  <span>Group-wide coordination</span>
                 </li>
               </ul>
             </div>
@@ -59,31 +62,30 @@ export default function SaikrupaBulkMovers() {
 
         {/* Services */}
         <section className="py-12 border-t border-gray-200">
-          <h2 className="text-3xl font-bold text-primary mb-6">Materials We Transport</h2>
+          <h2 className="text-3xl font-bold text-primary mb-6">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Minerals & Ores</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">Administrative Services</h3>
               <p className="text-gray-600">
-                Transportation of iron ore, manganese ore, and other mineral commodities with specialized handling.
+                Comprehensive administrative support including documentation, compliance, and regulatory management.
               </p>
             </div>
             <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Industrial Materials</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">Operational Support</h3>
               <p className="text-gray-600">
-                Bulk transportation of limestone, aggregates, and other industrial materials for construction and
-                manufacturing.
+                Operational support functions that enhance efficiency and coordination across group subsidiaries.
               </p>
             </div>
             <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Agricultural Products</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">Business Development</h3>
               <p className="text-gray-600">
-                Logistics solutions for bulk agricultural commodities and processed materials.
+                Strategic business development and partnership coordination to support group growth initiatives.
               </p>
             </div>
             <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Custom Solutions</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">Support Services</h3>
               <p className="text-gray-600">
-                Tailored transportation solutions for specialized bulk materials and unique requirements.
+                Specialized support services tailored to meet the unique needs of group operations.
               </p>
             </div>
           </div>
@@ -91,7 +93,7 @@ export default function SaikrupaBulkMovers() {
 
         {/* CTA */}
         <section className="py-12 text-center border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-primary mb-4">Need Bulk Transportation?</h2>
+          <h2 className="text-2xl font-bold text-primary mb-4">Need Business Support Services?</h2>
           <Link
             href="/contact"
             className="inline-block px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition"

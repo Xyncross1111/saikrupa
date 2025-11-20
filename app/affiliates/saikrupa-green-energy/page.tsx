@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function SaikrupaGreenEnergy() {
@@ -7,11 +8,12 @@ export default function SaikrupaGreenEnergy() {
     <>
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Hero Section */}
-        <section className="py-12 md:py-16">
-          <Link href="/affiliates" className="text-secondary hover:text-secondary/80 mb-4 inline-block">
-            ← Back to Affiliates
+        <section className="mb-8 sm:mb-12">
+          <Link href="/affiliates" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-secondary transition mb-4">
+            <ArrowRight size={14} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+            Back to Affiliates
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Saikrupa Green Energy Pvt Ltd</h1>
           <p className="text-lg text-gray-600 max-w-3xl">

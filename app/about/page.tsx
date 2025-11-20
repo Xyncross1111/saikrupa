@@ -19,7 +19,7 @@ export default function About() {
         </section>
 
         {/* Company Overview */}
-        <section className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <section className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-2xl font-serif font-bold text-primary mb-4">Our Journey</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
@@ -44,26 +44,37 @@ export default function About() {
               services of the sector.
             </p>
           </div>
-          <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
-            <h3 className="text-xl font-serif font-semibold text-primary mb-6">Key Highlights</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
-                <span className="text-gray-700">15+ years of industry experience</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
-                <span className="text-gray-700">10+ million tons transported</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
-                <span className="text-gray-700">615+ qualified professionals</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
-                <span className="text-gray-700">10 subsidiary companies</span>
-              </li>
-            </ul>
+          <div className="space-y-6">
+            <div className="rounded-2xl border border-border bg-card shadow-sm overflow-hidden">
+              <div className="relative aspect-[16/9]">
+                <img
+                  src="/about.jpg"
+                  alt="About"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="text-xl font-serif font-semibold text-primary mb-6">Key Highlights</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
+                    <span className="text-gray-700">15+ years of industry experience</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
+                    <span className="text-gray-700">10+ million tons transported</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
+                    <span className="text-gray-700">615+ qualified professionals</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
+                    <span className="text-gray-700">10 subsidiary companies</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -71,76 +82,82 @@ export default function About() {
         <section className="mb-16 bg-gray-50 p-8 rounded-xl border border-gray-200">
           <h2 className="text-2xl font-serif font-bold text-primary mb-6">Our Affiliate Companies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex items-center gap-3">
+            <Link href="/affiliates/saikrupa-transport" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Transport</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Saikrupa Transport</span>
+            </Link>
+            <Link href="/affiliates/saikrupa-coal-supplier" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Coal Suppliers</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Saikrupa Coal Supplier</span>
+            </Link>
+            <Link href="/affiliates/sai-coal-movers" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Coal Movers</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Sai Coal Movers</span>
+            </Link>
+            <Link href="/affiliates/saikrupa-bulk-movers" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Sai Bulk Movers</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Sai Bulk Movers</span>
+            </Link>
+            <Link href="/affiliates/saikrupa-green-energy" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Green Energy Pvt Ltd</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Saikrupa Green Energy Pvt Ltd</span>
+            </Link>
+            <Link href="/affiliates/saikrupa-service-stations" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Service Station</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Saikrupa Service Stations</span>
+            </Link>
+            <Link href="/affiliates/vasundhara-coal-carriers" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Vasundhara Coal Carriers Pvt Ltd</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Vasundhara Coal Carriers Pvt Ltd</span>
+            </Link>
+            <Link href="/affiliates/gbs-pvt-ltd" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">GBS Pvt Ltd</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">GBS Pvt Ltd</span>
+            </Link>
+            <Link href="/affiliates/truenest-ventures" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Truenest Ventures</span>
-            </div>
-            <div className="flex items-center gap-3">
+              <span className="text-gray-700 group-hover:underline">Truenest Ventures</span>
+            </Link>
+            <Link href="/affiliates/saikrupa-trading" className="flex items-center gap-3 transition-colors hover:text-secondary cursor-pointer group">
               <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-gray-700">Saikrupa Traders</span>
-            </div>
+              <span className="text-gray-700 group-hover:underline">Saikrupa Traders</span>
+            </Link>
           </div>
         </section>
 
         {/* Mission, Vision, Values */}
         <section className="mb-16">
-          <h2 className="text-2xl font-serif font-bold text-primary mb-8">Mission, Vision & Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 border-l-4 border-secondary bg-linear-to-br from-secondary/5 to-transparent rounded-r-lg">
-              <Target className="w-8 h-8 text-secondary mb-3" />
-              <h3 className="text-lg font-serif font-semibold text-primary mb-3">Mission</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Qualitative & Quantitative (Q2) service to the clients with Excellence, Economy & Efficiency (E3)
+          <div className="mb-10 text-center sm:mb-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">Our Purpose</p>
+            <h2 className="mt-3 text-2xl font-serif font-semibold text-primary sm:text-3xl md:text-4xl">
+              Mission, Vision & Values
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+              Guided by a commitment to excellence and responsibility across every engagement.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8">
+              <Target className="h-10 w-10 text-secondary sm:h-12 sm:w-12" />
+              <h3 className="text-lg font-serif font-semibold text-primary sm:text-xl">Mission</h3>
+              <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Qualitative & Quantitative service to clients with Excellence, Economy & Efficiency
               </p>
             </div>
-            <div className="p-6 border-l-4 border-accent bg-linear-to-br from-accent/5 to-transparent rounded-r-lg">
-              <Briefcase className="w-8 h-8 text-accent mb-3" />
-              <h3 className="text-lg font-serif font-semibold text-primary mb-3">Vision</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Explore sources across the globe to perform for excellence for the inland clients
+            <div className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8">
+              <Briefcase className="h-10 w-10 text-secondary sm:h-12 sm:w-12" />
+              <h3 className="text-lg font-serif font-semibold text-primary sm:text-xl">Vision</h3>
+              <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Explore sources across the globe to perform for excellence for inland clients
               </p>
             </div>
-            <div className="p-6 border-l-4 border-primary bg-linear-to-br from-primary/5 to-transparent rounded-r-lg">
-              <Users className="w-8 h-8 text-primary mb-3" />
-              <h3 className="text-lg font-serif font-semibold text-primary mb-3">Core Values</h3>
-              <ul className="text-gray-600 space-y-2 text-sm leading-relaxed">
-                <li>• Sustainable growth and development</li>
-                <li>• Quality assurance and reliability</li>
-                <li>• Customer satisfaction</li>
-                <li>• Professional work culture and transparency</li>
-              </ul>
+            <div className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8">
+              <Users className="h-10 w-10 text-secondary sm:h-12 sm:w-12" />
+              <h3 className="text-lg font-serif font-semibold text-primary sm:text-xl">Core Values</h3>
+              <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Sustainable growth, quality assurance, customer satisfaction, and professional transparency
+              </p>
             </div>
           </div>
         </section>

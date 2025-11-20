@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function SaikrupaTradingPage() {
@@ -8,13 +9,10 @@ export default function SaikrupaTradingPage() {
       <Header />
       <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-          <nav className="text-xs text-gray-500 mb-4">
-            <Link href="/" className="hover:text-primary">Home</Link>
-            <span className="mx-2">/</span>
-            <Link href="/affiliates" className="hover:text-primary">Affiliates</Link>
-            <span className="mx-2">/</span>
-            <span className="text-gray-700">Saikrupa Traders</span>
-          </nav>
+          <Link href="/affiliates" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-secondary transition mb-4">
+            <ArrowRight size={14} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+            Back to Affiliates
+          </Link>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary">Saikrupa Traders</h1>
           <p className="mt-2 text-gray-700 max-w-2xl">

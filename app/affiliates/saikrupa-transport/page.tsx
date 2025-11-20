@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function SaikrupaTransport() {
@@ -7,11 +8,12 @@ export default function SaikrupaTransport() {
     <>
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Hero Section */}
-        <section className="py-12 md:py-16">
-          <Link href="/affiliates" className="text-secondary hover:text-secondary/80 mb-4 inline-block">
-            ← Back to Affiliates
+        <section className="mb-8 sm:mb-12">
+          <Link href="/affiliates" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-secondary transition mb-4">
+            <ArrowRight size={14} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+            Back to Affiliates
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Saikrupa Transport</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
@@ -63,22 +65,22 @@ export default function SaikrupaTransport() {
         <section className="py-12 border-t border-gray-200">
           <h2 className="text-3xl font-bold text-primary mb-6">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Road Transportation</h3>
-              <p className="text-gray-600 mb-4">
-                Saikrupa Transport operates a large network of vehicles for transporting coal with excellent goodwill
-                among customers for timely delivery. We arrange coal cost payments on behalf of clients and liaise with
-                colliery authorities for fast loading and complaint resolution.
-              </p>
-            </div>
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-primary mb-3">Rail Transportation</h3>
-              <p className="text-gray-600 mb-4">
-                We maintain a well-established network of efficient personnel to ensure dispatch of proper quality and
-                quantity to clients. Our liaison with Railways ensures wagon placement at various sidings for timely
-                dispatch, and we arrange railway freight on behalf of clients.
-              </p>
-            </div>
+            <Link href="/services/coal-transportation" className="group">
+              <div className="border border-gray-200 p-6 rounded-lg h-full transition-all duration-300 hover:border-secondary hover:shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Coal Transportation</h3>
+                <p className="text-gray-600 mb-4">
+                  Comprehensive coal transportation services via road and rail with fleet management and logistics support.
+                </p>
+              </div>
+            </Link>
+            <Link href="/services/coal-liasioning" className="group">
+              <div className="border border-gray-200 p-6 rounded-lg h-full transition-all duration-300 hover:border-secondary hover:shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Coal Liaising</h3>
+                <p className="text-gray-600 mb-4">
+                  Expert liaison services with coal companies, collieries, and railways for smooth operations and compliance.
+                </p>
+              </div>
+            </Link>
           </div>
         </section>
 

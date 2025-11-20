@@ -11,8 +11,9 @@ export default function CoalLiasioning() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Hero Section */}
         <section className="mb-8 sm:mb-12">
-          <Link href="/services" className="inline-flex items-center gap-2 text-secondary hover:underline mb-4 text-sm">
-            ← Back to Services
+          <Link href="/services" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-secondary transition mb-4">
+            <ArrowRight size={14} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+            Back to Services
           </Link>
           <div className="flex items-center gap-4 mb-4">
             <div className="w-14 sm:w-16 h-14 sm:h-16 bg-secondary/10 rounded-lg flex items-center justify-center">
@@ -39,8 +40,8 @@ export default function CoalLiasioning() {
         </section>
 
         {/* Content Section */}
-        <section className="grid md:grid-cols-2 gap-8 mb-8 sm:mb-12">
-          <div>
+        <section className="flex flex-col md:flex-row gap-8 md:gap-12 mb-8 sm:mb-12 items-start">
+          <div className="flex-1">
             <h2 className="text-xl sm:text-2xl font-serif font-bold text-primary mb-4">Overview</h2>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-4">
               The coal at notified rates is made available by coal companies to coal consumers having long term coal linkage. The Liaisoning of coal is being provided to the Non-Regulated Sector consumers of various sub sectors through Auction mode only in which source(s) are fixed for the entire FSA period of 5 years at Bid Price (Basic + Premium, if any).
@@ -50,7 +51,7 @@ export default function CoalLiasioning() {
             </p>
           </div>
 
-          <div>
+          <div className="flex-1 md:pl-50">
             <h2 className="text-xl sm:text-2xl font-serif font-bold text-primary mb-4">Key Features</h2>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-gray-700">

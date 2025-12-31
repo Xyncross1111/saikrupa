@@ -89,6 +89,7 @@ const clients = [
   { name: "Northern Coalfields Limited (NCL)", logo: "/logos/ncl.png" },
   { name: "South Eastern Coalfields Limited (SECL)", logo: "/logos/secl.png" },
   { name: "Mahanadi Coalfields Limited. (MCL)", logo: "/logos/mcl.png" },
+  { name: "Maharashtra State Power Generation Company Limited (MAHAGENCO)", logo: "/logos/mahagenco.png" },
   { name: "Jindal Steel and Power Limited (JSPL)", logo: "/logos/jindal.png" },
   { name: "Adani Power Limited (APL)", logo: "/logos/adani.png" },
   { name: "Gujarat Electricity Corporation Limited (GSECL)", logo: "/logos/gsecl.png" },
@@ -353,7 +354,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-16">
             <div className="animate-fade-up">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-lg">
+              <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-lg">
                 <img
                   src="/who_are_we.jpg"
                   alt="Saikrupa Group Facility"
@@ -507,14 +508,6 @@ export default function Home() {
                   key={index}
                   className={`overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl animate-fade-up ${delayClass}`}
                 >
-                  <div className="relative h-48 overflow-hidden sm:h-64">
-                    <img
-                      src={leader.image || "/placeholder.svg"}
-                      alt={leader.name}
-                      className="h-full w-full object-cover transition duration-700 hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/15"></div>
-                  </div>
                   <div className="space-y-3 p-6 sm:p-8">
                     <h3 className="text-lg font-serif font-semibold text-primary sm:text-xl">{leader.name}</h3>
                     <p className="text-secondary text-sm font-semibold uppercase tracking-[0.25em] sm:text-xs">
@@ -552,7 +545,7 @@ export default function Home() {
                   key={index}
                   className={`group flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl animate-fade-up ${delayClass}`}
                 >
-                  <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <div className="relative aspect-video w-full overflow-hidden">
                     <img
                       src={item.image || "/placeholder.svg"}
                       alt={item.title}
